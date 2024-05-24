@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>position in html</title>
+	<style type="text/css">
+		.parent{
+			width: 100%;
+			height: 500px;
+			background: blue;
+
+		}
+		.child1{
+			width: 100%;
+			height: 150px;
+			background: deeppink;
+			
+		}
+		.child2{
+			width: 100%;
+			height: 150px;
+			background: green;
+			position: fixed;
+			top: 0;
+
+		}
+	</style>
+</head>
+<body>
+	<!--1.static-default one based on black level and inline elements html page renders its positions
+	2.relative
+	3.absoult-absolute used when i need to change position of a child element with respect to its parent position
+    4.fixed-disturbs the document flow and change position with res
+    5.sticky-->
+	<div class="parent">
+		<div class="child1">child1</div>
+		<div class="child2">child2</div>
+		
+	</div>
+
+</body>
+</html>

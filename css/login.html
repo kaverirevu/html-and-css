@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+             background: linear-gradient(to right, blue, hotpink);
+
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login-container h2 {
+             margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+             font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: darkblue;
+        }
+        .login-form input[type="submit"]:active {
+            background-color: #3e8e41;
+        }
+        .login-form input[type="text"]:focus,
+        .login-form input[type="password"]:focus {
+            border: 1px solid #4CAF50;
+        }
+        .login-form input[type="submit"]:focus {
+            outline: none;
+    </style>
+</head>
+<body>
+    <h1 style="color: goldenrod;">google login page</h1>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
